@@ -41,28 +41,19 @@ function EditGame(props) {
     if (newGame.published.trim() == '') {
       console.log("No date")
     }
-    updateGame(newGame, game.id)
+    //updateGame(newGame, game.id)
     console.log(newGame.content)
     console.log(newGame.published)
 
-    uploadChanges(newGame)
   
 
   }
 
+  // const sendUpdates = async (game, id) => {
+  //   let res = await fetch('/rest/games/update/' + id)
+  // }
 
-  const uploadChanges = async (game) => {
-    // let res = await update('/rest/games', {
 
-    // })
-      let res = await fetch('/rest/games', {
-      method: 'UPDATE',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(game)
-    })
-    res = await res.json()
-    console.log(res)
-  }
 
   // const copyGame = () => {
   //   let game = props.location.state.game

@@ -17,11 +17,11 @@ export default function GameContextProvider(props) {
     })
   }
 
-  const updateGame = (game, id) => {
-    setGames(games.filter(r => r.id !== id))
+  // const updateGame = (game, id) => {
+  //   setGames(games.filter(r => r.id !== id))
 
-    setGames([...games, game])
-  }
+  //   setGames([...games, game])
+  // }
 
   const fetchGames = async () => {
     let res = await fetch('/rest/games')
@@ -38,7 +38,7 @@ export default function GameContextProvider(props) {
     games,
     appendGame,
     removeGame,
-    updateGame
+    //updateGame
   }
 
   return (

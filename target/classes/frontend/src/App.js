@@ -12,7 +12,7 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div className="App" style={{paddingBottom: '20px'}}>
       <GameContextProvider>
         <Router>
           <TopNavbar />
