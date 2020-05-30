@@ -51,6 +51,7 @@ function NewGame(props) {
     <div style={{ height: '100vh', paddingBottom: '10px'}}>
       <h1 style={{ margin: 'auto', textAlign: 'center', padding: '50px', color: 'lightblue', textDecoration: 'underline'}}>Add New Game</h1>
       <Form onSubmit={addGame} style={{display: 'block', color: 'white', backgroundColor: '#349', borderColor: '#349', margin: 'auto', width: '65vw', padding: '50px 80px'}} className="row">
+        <hr />
         <FormGroup className="col-sm-12 col-md-8 col-lg-6">
           <Label for="game-title">Title</Label>
           <Input required type="text" id="game-title" placeholder="enter title..." value={title} 
@@ -67,6 +68,7 @@ function NewGame(props) {
           <Input required type="date" id="game-release" value={published}
             onChange={e => setPublished(e.target.value)}/>
         </FormGroup>
+        <hr />
         <div style={{paddingTop: '30px' , margin: '20px auto', textAlign: 'center'}}>
           <Button color="info" className="ml-3">Add Game</Button>
         </div>
